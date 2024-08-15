@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Trailer Management System</h1>
+        </header>
+        <section class="stats">
+            <div class="stat-item" onclick="changeColor(yellow)">
+                <h2>Total Trailers</h2>
+                <p>100</p>
+            </div>
+            <div class="stat-item" onclick="changeColor(this)">
+                <h2>Active</h2>
+                <p>80</p>
+            </div>
+            <div class="stat-item" onclick="changeColor(this)">
+                <h2>Inactive</h2>
+                <p>10</p>
+            </div>
+            <div class="stat-item" onclick="changeColor(this)">
+                <h2>Maintenance</h2>
+                <p>10</p>
+            </div>
+            <div class="stat-item" onclick="changeColor(this)">
+                <h2>Pending Deliveries</h2>
+                <p>15</p>
+            </div>
+            <div class="stat-item" onclick="changeColor(this)">
+                <h2>On the Way</h2>
+                <p>30</p>
+            </div>
+            <div class="stat-item" onclick="changeColor(this)">
+                <h2>Delivered</h2>
+                <p>55</p>
+            </div>
+        </section>
+        <footer>
+            <a href="#" class="btn">Trailer status</a>
+            <a href="#" class="btn">Notifications</a>
+            <a href="#" class="btn">Delivery Status</a>
+            <a href="#" class="btn">Trailer Rental/Sharing</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

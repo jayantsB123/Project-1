@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Status Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="pending-deliveries">
+            <h2>Pending Deliveries</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Capacity</th>
+                        <th>Urgency</th>
+                        <th>Source Destination</th>
+                        <th>Final Destination</th>
+                        <th>Assign Trailer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ITM123</td>
+                        <td>2000 cu ft</td>
+                        <td>High</td>
+                        <td>Source A</td>
+                        <td>Destination B</td>
+                        <td><button class="btn">Assign Trailer</button></td>
+                    </tr>
+                    <tr>
+                        <td>ITM124</td>
+                        <td>1500 cu ft</td>
+                        <td>Medium</td>
+                        <td>Source C</td>
+                        <td>Destination D</td>
+                        <td><button class="btn">Assign Trailer</button></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="on-the-way-deliveries">
+            <h2>On the Way Deliveries</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Trailer ID</th>
+                        <th>Current Location</th>
+                        <th>ETA</th>
+                        <th>Track</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ITM125</td>
+                        <td>TR5678</td>
+                        <td>Near FC1</td>
+                        <td>14:00</td>
+                        <td><button class="btn" onclick="trackDelivery('ITM125')">Track</button></td>
+                    </tr>
+                    <tr>
+                        <td>ITM126</td>
+                        <td>TR9101</td>
+                        <td>Near Store 3</td>
+                        <td>16:30</td>
+                        <td><button class="btn" onclick="trackDelivery('ITM126')">Track</button></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="delivered-items">
+            <h2>Delivered Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Delivered At</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ITM127</td>
+                        <td>2024-07-30</td>
+                    </tr>
+                    <tr>
+                        <td>ITM128</td>
+                        <td>2024-07-31</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

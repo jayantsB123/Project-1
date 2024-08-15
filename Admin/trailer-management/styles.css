@@ -1,0 +1,87 @@
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ background-image: url('back.jpg'); /* Replace 'background.jpg' with your image file */
+ background-size: cover;
+ background-position: center;
+ margin: 0;
+ padding: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+
+.container {
+ width: 80%;
+ padding: 20px;
+ background-color: #ffffff;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ border-radius: 8px;
+}
+
+h1 {
+ color: #0063A0;
+ text-align: center;
+}
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+}
+
+thead {
+ background-color: #0063A0;
+ color: #ffffff;
+}
+
+th, td {
+ padding: 12px;
+ text-align: left;
+ border-bottom: 1px solid #ddd;
+}
+
+.status.active {
+ color: #28a745;
+}
+
+.status.inactive {
+ color: #dc3545;
+}
+
+.status.maintenance {
+ color: #ffc107;
+}
+
+.edit-btn, .track-btn {
+ background-color: #007bff;
+ border: none;
+ color: #ffffff;
+ padding: 8px 12px;
+ margin: 2px;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+.edit-btn:hover, .track-btn:hover {
+ background-color: #0056b3;
+}
+
+.pagination {
+ text-align: center;
+ margin-top: 20px;
+}
+
+.page-btn {
+ background-color: #007bff;
+ border: none;
+ color: #ffffff;
+ padding: 8px 12px;
+ margin: 0 5px;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+.page-btn:hover {
+ background-color: #0056b3;
+}

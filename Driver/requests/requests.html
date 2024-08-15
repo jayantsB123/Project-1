@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending Requests</title>
+    <link rel="stylesheet" href="requests-styles.css">
+</head>
+<body>
+    <div class="requests">
+        <header>
+            <h1>Pending Requests</h1>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Request ID</th>
+                    <th>Item ID</th>
+                    <th>Urgency</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Time Till Delivery</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>ITM123</td>
+                    <td>High</td>
+                    <td>Warehouse A</td>
+                    <td>Store X</td>
+                    <td>2 hours</td>
+                    <td>
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>ITM124</td>
+                    <td>Medium</td>
+                    <td>Warehouse B</td>
+                    <td>Store Y</td>
+                    <td>3 hours</td>
+                    <td>
+                        <button class="accept">Accept</button>
+                        <button class="decline">Decline</button>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="requests-script.js"></script>
+</body>
+</html>

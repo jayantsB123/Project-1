@@ -1,0 +1,80 @@
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f4;
+ background-image: url('back.jpg');
+ background-size: cover; /* Ensures the image covers the entire background */
+ background-position: center; /* Centers the image */
+ background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.dashboard-container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: rgba(255, 255, 255, 0.9); /* Adds a slight transparency for better readability */
+ border-radius: 10px; /* Rounded corners for the container */
+}
+
+header {
+ background-color: #004B87;
+ color: #ffffff;
+ padding: 20px;
+ text-align: center;
+}
+
+header h1 {
+ margin: 0;
+}
+
+.stats {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ margin: 20px 0;
+}
+
+.stat-item {
+ background-color: #ffffff;
+ border: 1px solid #dcdcdc;
+ border-radius: 8px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ flex: 1 1 calc(33% - 20px);
+ margin: 10px;
+ padding: 20px;
+ text-align: center;
+ transition: background-color 0.3s;
+}
+
+.stat-item h2 {
+ margin: 0 0 10px;
+ color: #004B87;
+}
+
+.stat-item p {
+ font-size: 24px;
+ margin: 0;
+ color: #333;
+}
+
+footer {
+ text-align: center;
+ margin-top: 20px;
+}
+
+.btn {
+ display: inline-block;
+ background-color: #f2c300;
+ color: #004B87;
+ padding: 10px 20px;
+ margin: 5px;
+ text-decoration: none;
+ border-radius: 5px;
+ font-weight: bold;
+ transition: background-color 0.3s;
+}
+
+.btn:hover {
+ background-color: #d1a500;
+}

@@ -1,0 +1,88 @@
+html, body {
+ height: 100%; /* Ensure the body and html elements cover the full height of the viewport */
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ background-image: url('back.jpg'); /* Add your image path here */
+ background-size: cover; /* Ensures the image covers the entire body */
+ background-position: center center; /* Center the image both vertically and horizontally */
+ background-repeat: no-repeat; /* Prevent the image from repeating */
+ height: 100vh; /* Ensure the body takes at least the full viewport height */
+ overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.requests {
+ max-width: 1000px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: #fff;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ text-align: center; /* Center-align the text */
+ margin-top: 200px;
+}
+
+header {
+ margin-bottom: 20px;
+}
+
+header h1 {
+ margin: 0;
+ color: #007bff; /* Change text color to blue */
+}
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 0 auto; /* Center-align the table */
+}
+
+thead {
+ background-color: #007bff;
+ color: #fff;
+}
+
+thead th {
+ padding: 10px;
+ text-align: left;
+}
+
+tbody td {
+ padding: 10px;
+ border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+ background-color: #f9f9f9;
+}
+
+button {
+ border: none;
+ padding: 8px 12px;
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: 14px;
+ margin: 0 5px;
+}
+
+button.accept {
+ background-color: #28a745;
+ color: #fff;
+}
+
+button.accept:hover {
+ background-color: #218838;
+}
+
+button.decline {
+ background-color: #dc3545;
+ color: #fff;
+}
+
+button.decline:hover {
+ background-color: #c82333;
+}

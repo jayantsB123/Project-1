@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer Sharing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trailer Sharing Platform</h1>
+    </header>
+
+    <main>
+        <button id="add-trailer-btn">Add Trailer</button>
+        <div id="trailer-list">
+            <!-- Trailers will be dynamically added here -->
+        </div>
+
+        <!-- Trailer per page selection -->
+        <div id="items-per-page">
+            <label for="trailers-per-page">Trailers per page:</label>
+            <select id="trailers-per-page">
+                <option value="2">2</option>
+                <option value="4" selected>4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+
+        <div id="pagination">
+            <!-- Pagination buttons will be dynamically added here -->
+        </div>
+    </main>
+
+    <!-- Modal for adding trailer -->
+    <div id="trailer-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Add New Trailer</h2>
+            <form id="trailer-form">
+                <label for="trailer-name">Trailer Name:</label>
+                <input type="text" id="trailer-name" required>
+
+                <label for="rented-by">Rented By (Company):</label>
+                <input type="text" id="rented-by" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" required>
+
+                <label for="pickup-location">Pickup Location:</label>
+                <input type="text" id="pickup-location" required>
+
+                <label for="loading-quantity">Loading Quantity (kg):</label>
+                <input type="number" id="loading-quantity" required>
+
+                <label for="photo-url">Photo URL:</label>
+                <input type="url" id="photo-url" required>
+
+                <button type="submit">Add Trailer</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

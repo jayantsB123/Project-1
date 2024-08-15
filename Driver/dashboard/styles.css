@@ -1,0 +1,90 @@
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-image: url('back.jpg'); /* Path to your background image */
+ background-size: cover; /* Cover the entire page */
+ background-position: center; /* Center the image */
+ background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.dashboard {
+ max-width: 1200px;
+ margin: 20px auto;
+ padding: 20px;
+ background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for better readability */
+ border-radius: 8px; /* Optional: rounded corners */
+}
+
+header {
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+header h1 {
+ margin: 0;
+ color: #ffc220; /* Gold color */
+ font-size: xx-large;
+}
+
+.overview {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
+ gap: 20px; /* Space between cards */
+ margin-bottom: 50px;
+}
+
+.card {
+ background-color: white;
+ padding: 15px;
+ border-radius: 8px;
+ border: 5px solid #004c91; /* Add border with color and width */
+ width: 30%; /* Ensure the width allows three cards to fit in one line */
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 0; /* Remove bottom margin for better alignment */
+}
+
+.card-image {
+ width: 300px; /* Adjust size as needed */
+ height: 300px;
+ margin-bottom: 10px;
+}
+
+.card h2 {
+ margin: 10px 0;
+}
+
+.card .value {
+ font-size: 18px;
+ color: #333;
+}
+
+.pending-requests {
+ text-align: center;
+}
+
+.pending-requests .count {
+ font-size: 24px;
+ color: #333;
+}
+
+button {
+ background-color: #ffc220; /* Gold color */
+ color: #fff;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: larger;
+ width: 400px; /* Adjust size as needed */
+ height: 50px;
+ margin-top: 10px;
+}
+
+button:hover {
+ background-color: #e0a800; /* Slightly darker gold color on hover */
+}
